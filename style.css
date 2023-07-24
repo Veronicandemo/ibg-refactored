@@ -1,0 +1,88 @@
+/* Apply the box-sizing property to all elements, so padding and border don't affect the overall size */
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+/* Set the font-family for the whole document */
+body {
+  font-family: Arial, sans-serif;
+  /* Create a linear gradient background using four different colors */
+  background: linear-gradient(
+    90deg,
+    #cbcbf0df 0%,
+    #f3f3d9 35.42%,
+    #e0f3e4 64.06%,
+    #e2f8f5 100%
+  );
+}
+
+/* Styling for the header section */
+.header {
+  background-color: #f8f9fa80;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the logo within the header */
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Styling for the navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  list-style: none;
+}
+
+/* Styling for the links in the navigation bar */
+.nav a {
+  cursor: pointer;
+}
+
+/* Styling for the main section, which contains content and sidebar */
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Styling for the main content area */
+.content {
+  width: 70%;
+}
+
+/* Apply margin-bottom to div elements inside the content area */
+.content div {
+  margin-bottom: 20px;
+}
+
+/* Styling for the titles within the content area */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styling for the sidebar */
+.sidebar {
+  width: 25%;
+}
+
+/* Styling for the footer section */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for images within the content area */
+.content img {
+  display: block;
+  margin: 20px auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+}
